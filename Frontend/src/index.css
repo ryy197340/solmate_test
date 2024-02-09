@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: linear-gradient(
+        180deg,
+        #14354b -13.25%,
+        #15535f -7.51%,
+        #166780 -2.73%,
+        #1d6c8f 2.04%,
+        #20567b 8.73%,
+        #23456b 15.42%,
+        #243960 24.03%,
+        #25325a 36.45%,
+        #263159 70.85%
+    );
+    /* background: linear-gradient(180deg, rgba(147, 27, 128, 0) 44%, #662481 100%); */
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+.footer-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(147, 27, 128, 0) 45%,
+        #662481 100%
+    );
+    z-index: -1;
+}
+
+.home {
+    background-image: url('/public/assets/img_stars.svg');
+    background-size: contain;
+}
+
+.presale {
+    background-image: url('/public/assets/bg_presale.svg');
+    background-position-x: center;
+    background-size: cover;
+}
+
+.dashboard {
+    background-image: url('/public/assets/bg_dashboard.svg');
+    background-position-x: center;
+    background-size: cover;
+}
+.contactus {
+    background-image: url('/public/assets/bg-contactus.jpg');
+    background-position-x: center;
+    background-size: cover;
+}
+.faq {
+    background-image: url('/public/assets/bg_faq.svg');
+    background-position-x: center;
+    background-size: cover;
+}
+
+.wallet-adapter-button {
+    background: #34f79a !important;
+    color: black;
+    border-radius: 12px;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+    border: 1px solid white;
+    color: black;
+}
+
+.bg-exchangemodal {
+    background: linear-gradient(180deg, #21547a 0%, #662481 90%);
+}
+
+.currency-selector {
+    background: transparent;
+}
+.currency-selector option {
+    background-color: #222540;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: #352d5e;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(23, 46, 61, 0.4);
+    border-radius: 20px;
+    border: 1px solid #2da877;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, #206186, #4b3271);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+.whitepaperbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #206186, #4b3271);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.whitepaperbar a:hover {
+    color: #f1f1f1;
+}
+
+.whitepaperbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+
+.wallet-adapter-button-trigger {
+    background: transparent !important;
+    color: #2efff8;
+    border-radius: 0px;
+    border: 1px solid white;
+    padding: 12px;
+    line-height: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+.wallet-adapter-button:not([disabled]):hover {
+    border: 1px solid white;
+    color: white;
+}
+.wallet-adapter-button {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+    .wallet-adapter-button {
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+    .wallet-adapter-button {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+    }
+}

@@ -1,0 +1,49 @@
+{
+   "name": "solmate-presale",
+   "version": "0.0.1",
+   "description": "Backend code for Solmate presale.",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "eth-sig-util": "^3.0.1",
+      "moment": "^2.29.1",
+      "ts-node": "^10.9.1"
+   },
+   "dependencies": {
+      "@ethersproject/providers": "^5.6.0",
+      "@project-serum/anchor": "^0.25.0",
+      "@solana/buffer-layout": "^4.0.0",
+      "@solana/spl-token": "^0.3.4",
+      "@types/cors": "^2.8.12",
+      "@types/express": "^4.17.13",
+      "@types/express-jwt": "^6.0.4",
+      "@types/jsonwebtoken": "^8.5.8",
+      "axios": "^0.27.2",
+      "bigint-buffer": "^1.1.5",
+      "bignumber.js": "^9.1.0",
+      "bs58": "^5.0.0",
+      "buffer": "^6.0.3",
+      "cors": "^2.8.5",
+      "crypto": "^1.0.1",
+      "dotenv": "^16.0.3",
+      "ethers": "^5.6.0",
+      "express": "^4.15.4",
+      "express-jwt": "^6.1.0",
+      "jsonwebtoken": "^8.5.1",
+      "mysql": "^2.14.1",
+      "npm": "^8.18.0",
+      "reflect-metadata": "^0.1.10",
+      "request": "^2.88.2",
+      "sqlite3": "^5.1.6",
+      "typeorm": "0.2.41",
+      "typescript": "^4.8.2",
+      "web3": "^1.7.5",
+      "web3-utils": "^1.7.0",
+      "winston": "^3.8.1",
+      "winston-daily-rotate-file": "^4.7.1"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "dev": "ts-node src/index_dev.ts",
+      "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+   }
+}
